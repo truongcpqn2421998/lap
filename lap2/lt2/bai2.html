@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('Nhập số muốn tính giai thừa:');
+    let total=1
+    number=parseInt(number);
+    while (number<0 ) {
+        number = prompt('Nhập lại đê:')
+    }
+        if (number===0) {
+            alert('0!=1')
+        }else {
+            for (let i = 2; i <= number; i++) {
+                total *= i;
+            }
+            alert('kết quả là: ' + total)
+        }
+</script>
+</body>
+</html>

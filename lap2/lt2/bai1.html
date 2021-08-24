@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=prompt('Nhập số lượng số trong dãy finolaci')
+    let a=0;
+    let b=1;
+    let c=0;
+    let count=0;
+    number=parseInt(number);
+    document.write(a+'<br>');
+    document.write(b+'<br>');
+    for (a=0,b=1;count<(number-2);) {
+        document.write((c=a+b)+'<br>')
+        a=b
+        b=c
+        count+=1
+    }
+</script>
+</body>
+</html>

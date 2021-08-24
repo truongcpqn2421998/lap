@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="chơi" onclick="play()">
+<script>
+function play() {
+    let below=prompt('Nhập chặn dưới:');
+    let above=prompt('Nhập chặn trên:');
+    below=parseInt(below);
+    above=parseInt(above);
+    count=Math.floor(Math.random()*(above-below))+below
+    count=parseInt(count)
+    let a= prompt('Số mà bạn đoán:')
+    let n=0;
+    n=parseInt(n)
+    a=parseInt(a)
+    while (a!==count&&n<3) {
+        if (a>count) {
+            alert('Số to quá rồi nhập bé hơn đi')
+        }
+        if (a<count) {
+            alert('Số bé quá rôi nhập lớn hơn đi')
+        }
+        n+=1;
+        a=prompt('Đoán lại số đi nào:')
+        a=parseInt(a)
+    }
+    if (a===count) {
+        alert('Chúc mừng bạn đã đoán đúng')
+    }else {
+        alert('Bạn quá gà')
+    }
+}
+</script>
+</body>
+</html>
