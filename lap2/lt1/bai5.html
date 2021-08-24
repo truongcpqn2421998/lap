@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=1;
+    let c=0;
+    let count=0;
+    let total=1;
+    total=parseInt(total);
+    for (a=0,b=1;count<19;) {
+        c=a+b;
+        a=b;
+        b=c;
+        total=total+c
+        count+=1
+    }
+    alert(total)
+</script>
+</body>
+</html>

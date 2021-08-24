@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number =prompt('Nhập số lượng số nguyên tố cần in ra:')
+    let count=0;
+    let N=2;
+    number=parseInt(number)
+    count=parseInt(count);
+    N=parseInt(N)
+    for (N=2;count<number;N++) {
+        for (i=2,a=0;i<N;i++) {
+            if (N%i===0) {
+            a=1;
+            break;
+            }
+        }
+        if (a===0) {
+            document.write(N+'<br>');
+            count += 1;
+         }
+    }
+
+
+</script>
+</body>
+</html>
